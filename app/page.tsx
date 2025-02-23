@@ -32,6 +32,7 @@ import { AnimatePresence } from 'framer-motion';
 import Loader from '~/components/global/LoaderComp/loader';
 import Landing from '~/components/global/HeroComp/landing';
 import Description from '~/components/global/DescriptionComp/description';
+import Noise from '~/components/style/Noise';
 
 
 export default function Page() {
@@ -48,7 +49,14 @@ export default function Page() {
     }, []);
 
   return (
-    <>
+    <div className='relative overflow-hidden'>
+      <Noise
+    patternSize={250}
+    patternScaleX={1}
+    patternScaleY={1}
+    patternRefreshInterval={2}
+    patternAlpha={25}
+  />
       <AnimatePresence mode='wait'>
               {isLoading && <Loader />}
       </AnimatePresence>
@@ -56,13 +64,12 @@ export default function Page() {
       <Description />
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
-      <Steps {...stepsHome} />
-      <Testimonials {...testimonialsHome} />
+      {/* <Testimonials {...testimonialsHome} />
       <FAQs2 {...faqs2Home} />
       <Pricing {...pricingHome} />
       <Team {...teamHome} />
       <Contact {...contactHome} />
-      <CallToAction2 {...callToAction2Home} />
-    </>
+      <CallToAction2 {...callToAction2Home} /> */}
+    </div>
   );
 }
