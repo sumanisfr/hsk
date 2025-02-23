@@ -11,10 +11,6 @@
     @apply border-none bg-transparent text-gray-700 dark:text-gray-400 dark:hover:text-white hover:text-gray-900 shadow-none;
   }
 
-  .btn-primary {
-    @apply border-primary-600 dark:border-primary-700 hover:border-primary-800 dark:hover:border-primary-900 bg-primary-600 dark:bg-primary-700 hover:bg-primary-800 dark:hover:bg-primary-900 font-semibold text-white dark:text-white hover:text-white;
-  }
-
   .card {
     @apply rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-6 py-8 w-full;
   }

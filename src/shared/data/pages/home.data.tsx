@@ -109,12 +109,12 @@ export const featuresHome: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        Events that are <span className="whitespace-nowrap">Funtastic</span>
       </>
     ),
     subtitle:
-      "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
-    tagline: 'Features',
+      "Horizon has been a astounding festival and these events are the reason why. We've got a little something for everyone.",
+    tagline: '',
   },
   items: [
     {

@@ -31,6 +31,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Loader from '~/components/global/LoaderComp/loader';
 import Landing from '~/components/global/HeroComp/landing';
+import Description from '~/components/global/DescriptionComp/description';
 
 
 export default function Page() {
@@ -52,7 +53,7 @@ export default function Page() {
               {isLoading && <Loader />}
       </AnimatePresence>
       <Landing />
-      <SocialProof {...socialProofHome} />
+      <Description />
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
