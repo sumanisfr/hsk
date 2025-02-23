@@ -56,7 +56,6 @@ export default function Page() {
       <Description />
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
-      <Content {...contentHomeTwo} />
       <Steps {...stepsHome} />
       <Testimonials {...testimonialsHome} />
       <FAQs2 {...faqs2Home} />
