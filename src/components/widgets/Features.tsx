@@ -5,6 +5,7 @@ import TextPressure from '../style/TextPressure';
 import FlowingMenu from '../style/FlowingMenu';
 import GlitchText from '../style/GlitchText';
 import ScrollReveal from '../style/ScrollReveal';
+import GlassMenu from '../style/GlassMenu';
 
 const demoItems = [
   { link: '#', text: 'Maze hunt', image: 'https://picsum.photos/600/400?random=1' },
@@ -18,6 +19,34 @@ const techItems = [
   { link: '#', text: 'Blind code', image: 'https://picsum.photos/600/400?random=2' },
   { link: '#', text: 'Ideathon', image: 'https://picsum.photos/600/400?random=3' },
   { link: '#', text: 'CTF', image: 'https://picsum.photos/600/400?random=4' }
+];
+
+const menuItems = [
+  {
+    number: 1,
+    text: "Blind Code",
+    image: "/images/ferrari.png",
+    posterImage: "/images/ferrari.png",
+    description: "Code without seeing the screen, show your skills",
+    link: "/events"
+  },
+  {
+    number: 2,
+    text: "Blind Code",
+    image: "/images/ferrari.png",
+    posterImage: "/images/ferrari.png",
+    description: "Code without seeing the screen, show your skills",
+    link: "/events"
+  },
+  {
+    number: 3,
+    text: "Blind Code",
+    image: "/images/ferrari.png",
+    posterImage: "/images/ferrari.png",
+    description: "Code without seeing the screen, show your skills",
+    link: "/events"
+  },
+  // ... more items
 ];
 
 const Features = ({ id, header, items, columns = 3, hasBackground = false }: FeaturesProps) => (
@@ -37,9 +66,9 @@ const Features = ({ id, header, items, columns = 3, hasBackground = false }: Fea
     minFontSize={26}
   />
 
-  <div style={{ height: '600px', position: 'relative' }}>
-    <FlowingMenu items={demoItems} />
-  </div>
+  <GlassMenu 
+      items={menuItems}
+    />
 
   <TextPressure
     text="Tech!"
@@ -54,9 +83,9 @@ const Features = ({ id, header, items, columns = 3, hasBackground = false }: Fea
     minFontSize={26}
   />
 
-<div style={{ height: '600px', position: 'relative' }}>
-    <FlowingMenu items={techItems} />
-  </div>
+<GlassMenu 
+      items={menuItems}
+    />
 
   <ScrollReveal
   baseOpacity={0}
