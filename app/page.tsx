@@ -30,6 +30,7 @@ import {
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Loader from '~/components/global/LoaderComp/loader';
+import Landing from '~/components/global/HeroComp/landing';
 
 
 export default function Page() {
@@ -50,7 +51,7 @@ export default function Page() {
       <AnimatePresence mode='wait'>
               {isLoading && <Loader />}
       </AnimatePresence>
-      <Hero {...heroHome} />
+      <Landing />
       <SocialProof {...socialProofHome} />
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
