@@ -293,9 +293,9 @@ export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
   hasBackground: true,
   header: {
-    title: 'What our customers say about us',
+    title: 'Ready to get started?',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'Here is the timeline of the Horizon festival. We have had some amazing moments and we are looking forward to more.',
   },
   testimonials: [
     {
